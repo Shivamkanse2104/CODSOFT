@@ -1,0 +1,43 @@
+def add(a,b):
+    return a+b
+def subtract(a,b):
+    return a - b
+def multiply(a,b):
+    return a * b
+def divide(a,b):
+    if b == 0:
+        return "Error! Division by zero is not allowed."
+    else:
+        return a/b
+    
+while True:
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exit")
+    choice = int(input("Enter your choice: "))
+    if choice == 1:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        print(num1,"+",num2,"=",add(num1,num2))
+        
+    if choice == 2:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        print(num1,"-",num2,"=",subtract(num1,num2))
+        
+    if choice == 3:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        print(num1,"*",num2,"=",multiply(num1,num2))
+        
+    if choice == 4:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        print(num1,"/",num2,"=",divide(num1,num2))
+        
+    if choice == 5:
+        
+        print("Thank you for using the calculator!")
+        break
